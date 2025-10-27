@@ -7,5 +7,5 @@ import jakarta.enterprise.context.ApplicationScoped;
 import java.util.UUID;
 
 @ApplicationScoped
-public class PedidoRepository implements PanacheRepositoryBase<PedidoModel, UUID> {
+public class PedidoRepository implements PanacheRepositoryBase<PedidoModel, Long> {
 }

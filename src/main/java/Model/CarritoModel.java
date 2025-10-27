@@ -12,8 +12,8 @@ import java.util.UUID;
 public class CarritoModel {
 
     @Id
-    @UuidGenerator
-    public UUID id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @OneToMany(mappedBy = "carrito", cascade = CascadeType.ALL,orphanRemoval = true)
     public List<LineaCarritoModel> lineas = new ArrayList<>();
@@ -22,7 +22,7 @@ public class CarritoModel {
     public CarritoModel() {
     }
 
-    public UUID getId() { return id; }
+    public Long getId() { return id; }
     public List<LineaCarritoModel> getLineas() { return lineas; }
     public void setLineas(List<LineaCarritoModel> lineas) { this.lineas = lineas; }
 

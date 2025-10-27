@@ -7,6 +7,6 @@ import jakarta.enterprise.context.ApplicationScoped;
 import java.util.UUID;
 
 @ApplicationScoped
-public class CarritoRepository implements PanacheRepositoryBase<CarritoModel, UUID> {
+public class CarritoRepository implements PanacheRepositoryBase<CarritoModel, Long> {
 
 }

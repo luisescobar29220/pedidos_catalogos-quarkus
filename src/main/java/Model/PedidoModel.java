@@ -13,7 +13,7 @@ import java.util.List;
 public class PedidoModel {
 
     @Id
-    @UuidGenerator
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
