@@ -23,8 +23,8 @@ public class CarritoModel {
     }
 
     public UUID getId() { return id; }
-    public List<LineaCarritoEntity> getLineas() { return lineas; }
-    public void setLineas(List<LineaCarritoEntity> lineas) { this.lineas = lineas; }
+    public List<LineaCarritoModel> getLineas() { return lineas; }
+    public void setLineas(List<LineaCarritoModel> lineas) { this.lineas = lineas; }
 
 
 
